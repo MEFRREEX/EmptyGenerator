@@ -9,7 +9,7 @@ import com.mefrreex.emptygenerator.generator.EmptyGenerator;
 public class EmptyWorldGenerator extends PluginBase {
     
     @Override
-    public void onEnable() {
+    public void onLoad() {
         try {
             Registries.GENERATE_STAGE.register(EmptyGenerateStage.NAME, EmptyGenerateStage.class);
             Registries.GENERATOR.register(EmptyGenerator.NAME, EmptyGenerator.class);
